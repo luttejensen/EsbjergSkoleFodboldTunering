@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="535.0" prefWidth="499.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60" fx:controller="esbjergskolefodboldtunering.gui.controller.TilføjHoldController">
+   <children>
+      <Label layoutX="64.0" layoutY="51.0" prefHeight="61.0" prefWidth="338.0" text="Skole navn" />
+      <TextField fx:id="txtFieldTH" layoutX="64.0" layoutY="103.0" prefHeight="109.0" prefWidth="338.0" />
+      <ButtonBar layoutX="72.0" layoutY="397.0" prefHeight="40.0" prefWidth="338.0">
+        <buttons>
+          <Button fx:id="btnTilføjHold" mnemonicParsing="false" onAction="#tilføjHoldButton" prefHeight="25.0" prefWidth="295.0" text="Tilføj hold" />
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#cancelButton" text="Cancel" />
+            <Button fx:id="btnExit" mnemonicParsing="false" onAction="#exitButton" text="Exit" />
+        </buttons>
+      </ButtonBar>
+      <Label layoutX="64.0" layoutY="238.0" text="ID" />
+      <Label layoutX="270.0" layoutY="238.0" text="Gruppe" />
+      <TextField fx:id="txtFielsID" layoutX="64.0" layoutY="262.0" />
+      <TextField fx:id="txtFieldGruppe" layoutX="270.0" layoutY="262.0" />
+   </children>
+</AnchorPane>

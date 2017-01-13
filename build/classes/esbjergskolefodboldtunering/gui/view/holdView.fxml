@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="535.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esbjergskolefodboldtunering.gui.controller.HoldViewController">
+   <children>
+      <TableView fx:id="hVTableView" layoutX="51.0" layoutY="106.0" prefHeight="397.0" prefWidth="392.0">
+        <columns>
+          <TableColumn fx:id="teamIDColumnHV" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="holdNavnColumnHV" prefWidth="194.0" text="Hold navn" />
+            <TableColumn fx:id="gruppeColumnHV" prefWidth="120.0" text="Gruppe" />
+        </columns>
+      </TableView>
+      <ButtonBar layoutX="81.0" layoutY="32.0" prefHeight="40.0" prefWidth="316.0">
+        <buttons>
+          <Button fx:id="btnTilføjHold" mnemonicParsing="false" onAction="#addTeamButton" prefHeight="25.0" prefWidth="201.0" text="Tilføj Hold" />
+            <Button fx:id="exitHVButton" mnemonicParsing="false" onAction="#exitholdView" prefHeight="25.0" text="Exit" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
